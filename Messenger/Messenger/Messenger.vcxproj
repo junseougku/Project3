@@ -188,6 +188,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="MainDialog.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="MessengerDlg.h" />
     <ClInclude Include="pch.h" />
@@ -195,6 +196,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MainDialog.cpp" />
     <ClCompile Include="Messenger.cpp" />
     <ClCompile Include="MessengerDlg.cpp" />
     <ClCompile Include="pch.cpp">
