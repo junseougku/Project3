@@ -1,27 +1,27 @@
 ﻿
-// Messenger.cpp: 응용 프로그램에 대한 클래스 동작을 정의합니다.
+// Learning.cpp: 응용 프로그램에 대한 클래스 동작을 정의합니다.
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "Messenger.h"
-#include "MessengerDlg.h"
+#include "Learning.h"
+#include "LearningDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 
-// CMessengerApp
+// CLearningApp
 
-BEGIN_MESSAGE_MAP(CMessengerApp, CWinApp)
+BEGIN_MESSAGE_MAP(CLearningApp, CWinApp)
 	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
 
 
-// CMessengerApp 생성
+// CLearningApp 생성
 
-CMessengerApp::CMessengerApp()
+CLearningApp::CLearningApp()
 {
 	// 다시 시작 관리자 지원
 	m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_RESTART;
@@ -31,14 +31,14 @@ CMessengerApp::CMessengerApp()
 }
 
 
-// 유일한 CMessengerApp 개체입니다.
+// 유일한 CLearningApp 개체입니다.
 
-CMessengerApp theApp;
+CLearningApp theApp;
 
 
-// CMessengerApp 초기화
+// CLearningApp 초기화
 
-BOOL CMessengerApp::InitInstance()
+BOOL CLearningApp::InitInstance()
 {
 	// 응용 프로그램 매니페스트가 ComCtl32.dll 버전 6 이상을 사용하여 비주얼 스타일을
 	// 사용하도록 지정하는 경우, Windows XP 상에서 반드시 InitCommonControlsEx()가 필요합니다.
@@ -77,7 +77,7 @@ BOOL CMessengerApp::InitInstance()
 	// 적절한 내용으로 수정해야 합니다.
 	SetRegistryKey(_T("로컬 응용 프로그램 마법사에서 생성된 응용 프로그램"));
 
-	CMessengerDlg dlg;
+	CLearningDlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
 	if (nResponse == IDOK)

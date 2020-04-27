@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{0107AFAC-766E-47CD-82A8-C18FD58B0B51}</ProjectGuid>
+    <ProjectGuid>{9E71D228-0F94-4110-B4DB-95D55BD430A5}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
-    <RootNamespace>Messenger</RootNamespace>
+    <RootNamespace>Learning</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -188,17 +188,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
-    <ClInclude Include="MainDialog.h" />
-    <ClInclude Include="Messenger.h" />
-    <ClInclude Include="MessengerDlg.h" />
+    <ClInclude Include="Learning.h" />
+    <ClInclude Include="LearningDlg.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MainDialog.cpp" />
-    <ClCompile Include="Messenger.cpp" />
-    <ClCompile Include="MessengerDlg.cpp" />
+    <ClCompile Include="Learning.cpp" />
+    <ClCompile Include="LearningDlg.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -207,13 +205,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Messenger.rc" />
+    <ResourceCompile Include="Learning.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\Messenger.rc2" />
+    <None Include="res\Learning.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\Messenger.ico" />
+    <Image Include="res\Learning.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

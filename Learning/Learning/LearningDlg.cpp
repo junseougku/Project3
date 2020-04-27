@@ -1,14 +1,12 @@
 ﻿
-// MessengerDlg.cpp: 구현 파일
+// LearningDlg.cpp: 구현 파일
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "Messenger.h"
-#include "MessengerDlg.h"
+#include "Learning.h"
+#include "LearningDlg.h"
 #include "afxdialogex.h"
-
-#include "MainDialog.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -48,33 +46,32 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CMessengerDlg 대화 상자
+// CLearningDlg 대화 상자
 
 
 
-CMessengerDlg::CMessengerDlg(CWnd* pParent /*=nullptr*/)
-	: CDialogEx(IDD_MESSENGER_DIALOG, pParent)
+CLearningDlg::CLearningDlg(CWnd* pParent /*=nullptr*/)
+	: CDialogEx(IDD_LEARNING_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
-void CMessengerDlg::DoDataExchange(CDataExchange* pDX)
+void CLearningDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 }
 
-BEGIN_MESSAGE_MAP(CMessengerDlg, CDialogEx)
+BEGIN_MESSAGE_MAP(CLearningDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	ON_BN_CLICKED(IDOKBUTTON, &CMessengerDlg::OnBnClickedOkbutton)
-	ON_BN_CLICKED(IDCLOSEBUTTON, &CMessengerDlg::OnBnClickedClosebutton)
+	ON_BN_CLICKED(IDCANCELBUTTON, &CLearningDlg::OnBnClickedCancelbutton)
 END_MESSAGE_MAP()
 
 
-// CMessengerDlg 메시지 처리기
+// CLearningDlg 메시지 처리기
 
-BOOL CMessengerDlg::OnInitDialog()
+BOOL CLearningDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
@@ -108,7 +105,7 @@ BOOL CMessengerDlg::OnInitDialog()
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 
-void CMessengerDlg::OnSysCommand(UINT nID, LPARAM lParam)
+void CLearningDlg::OnSysCommand(UINT nID, LPARAM lParam)
 {
 	if ((nID & 0xFFF0) == IDM_ABOUTBOX)
 	{
@@ -125,7 +122,7 @@ void CMessengerDlg::OnSysCommand(UINT nID, LPARAM lParam)
 //  아래 코드가 필요합니다.  문서/뷰 모델을 사용하는 MFC 응용 프로그램의 경우에는
 //  프레임워크에서 이 작업을 자동으로 수행합니다.
 
-void CMessengerDlg::OnPaint()
+void CLearningDlg::OnPaint()
 {
 	if (IsIconic())
 	{
@@ -152,22 +149,14 @@ void CMessengerDlg::OnPaint()
 
 // 사용자가 최소화된 창을 끄는 동안에 커서가 표시되도록 시스템에서
 //  이 함수를 호출합니다.
-HCURSOR CMessengerDlg::OnQueryDragIcon()
+HCURSOR CLearningDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
-void CMessengerDlg::OnBnClickedOkbutton()
+
+
+void CLearningDlg::OnBnClickedCancelbutton()
 {
-	CDialogEx::OnOK();
-
-	MainDialog mainDialog;
-	mainDialog.DoModal();
-}
-
-
-void CMessengerDlg::OnBnClickedClosebutton()
-{
-	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	SendMessage(WM_CLOSE, 0, 0);
+	::SendMessage(this->m_hWnd, WM_CLOSE, NULL,NULL);
 }

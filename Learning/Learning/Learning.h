@@ -1,5 +1,5 @@
 ﻿
-// Messenger.h: PROJECT_NAME 응용 프로그램에 대한 주 헤더 파일입니다.
+// Learning.h: PROJECT_NAME 응용 프로그램에 대한 주 헤더 파일입니다.
 //
 
 #pragma once
@@ -11,14 +11,14 @@
 #include "resource.h"		// 주 기호입니다.
 
 
-// CMessengerApp:
-// 이 클래스의 구현에 대해서는 Messenger.cpp을(를) 참조하세요.
+// CLearningApp:
+// 이 클래스의 구현에 대해서는 Learning.cpp을(를) 참조하세요.
 //
 
-class CMessengerApp : public CWinApp
+class CLearningApp : public CWinApp
 {
 public:
-	CMessengerApp();
+	CLearningApp();
 
 // 재정의입니다.
 public:
@@ -29,4 +29,4 @@ public:
 	DECLARE_MESSAGE_MAP()
 };
 
-extern CMessengerApp theApp;
+extern CLearningApp theApp;

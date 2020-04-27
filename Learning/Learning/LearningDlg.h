@@ -1,20 +1,20 @@
 ﻿
-// MessengerDlg.h: 헤더 파일
+// LearningDlg.h: 헤더 파일
 //
 
 #pragma once
 
 
-// CMessengerDlg 대화 상자
-class CMessengerDlg : public CDialogEx
+// CLearningDlg 대화 상자
+class CLearningDlg : public CDialogEx
 {
 // 생성입니다.
 public:
-	CMessengerDlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
+	CLearningDlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
 
 // 대화 상자 데이터입니다.
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_MESSENGER_DIALOG };
+	enum { IDD = IDD_LEARNING_DIALOG };
 #endif
 
 	protected:
@@ -31,10 +31,6 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
-
 public:
-	afx_msg void OnBnClickedOk();
-	afx_msg void OnBnClickedClose();
-	afx_msg void OnBnClickedOkbutton();
-	afx_msg void OnBnClickedClosebutton();
+	afx_msg void OnBnClickedCancelbutton();
 };

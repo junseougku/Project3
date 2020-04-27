@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Messenger.h">
+    <ClInclude Include="Learning.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="MessengerDlg.h">
+    <ClInclude Include="LearningDlg.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="framework.h">
@@ -33,36 +33,30 @@
     <ClInclude Include="pch.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="MainDialog.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Messenger.cpp">
+    <ClCompile Include="Learning.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="MessengerDlg.cpp">
+    <ClCompile Include="LearningDlg.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="MainDialog.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Messenger.rc">
+    <ResourceCompile Include="Learning.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\Messenger.rc2">
+    <None Include="res\Learning.rc2">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\Messenger.ico">
+    <Image Include="res\Learning.ico">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>
